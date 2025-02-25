@@ -9,7 +9,7 @@ import UIKit
 
 class CardSelectionVC: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
-    @IBOutlet var Buttons: [UIButton]!
+
     
     var cards: [UIImage] = Card.AllValues
     
@@ -19,9 +19,6 @@ class CardSelectionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
-        for button in Buttons {
-            button.layer.cornerRadius = 10
-        }
     }
     
     
